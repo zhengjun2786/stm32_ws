@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"zhongduan\startup_stm32f103xb.o"
+"zhongduan\main.o"
+"zhongduan\gpio.o"
+"zhongduan\stm32f1xx_it.o"
+"zhongduan\stm32f1xx_hal_msp.o"
+"zhongduan\stm32f1xx_hal_gpio_ex.o"
+"zhongduan\stm32f1xx_hal.o"
+"zhongduan\stm32f1xx_hal_rcc.o"
+"zhongduan\stm32f1xx_hal_rcc_ex.o"
+"zhongduan\stm32f1xx_hal_gpio.o"
+"zhongduan\stm32f1xx_hal_dma.o"
+"zhongduan\stm32f1xx_hal_cortex.o"
+"zhongduan\stm32f1xx_hal_pwr.o"
+"zhongduan\stm32f1xx_hal_flash.o"
+"zhongduan\stm32f1xx_hal_flash_ex.o"
+"zhongduan\stm32f1xx_hal_exti.o"
+"zhongduan\system_stm32f1xx.o"
+--strict --scatter "zhongduan\zhongduan.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "zhongduan.map" -o zhongduan\zhongduan.axf

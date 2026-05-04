@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"key_control\startup_stm32f103xb.o"
+"key_control\main.o"
+"key_control\gpio.o"
+"key_control\stm32f1xx_it.o"
+"key_control\stm32f1xx_hal_msp.o"
+"key_control\stm32f1xx_hal_gpio_ex.o"
+"key_control\stm32f1xx_hal.o"
+"key_control\stm32f1xx_hal_rcc.o"
+"key_control\stm32f1xx_hal_rcc_ex.o"
+"key_control\stm32f1xx_hal_gpio.o"
+"key_control\stm32f1xx_hal_dma.o"
+"key_control\stm32f1xx_hal_cortex.o"
+"key_control\stm32f1xx_hal_pwr.o"
+"key_control\stm32f1xx_hal_flash.o"
+"key_control\stm32f1xx_hal_flash_ex.o"
+"key_control\stm32f1xx_hal_exti.o"
+"key_control\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "KEY_control\KEY_control.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "KEY_control.map" -o KEY_control\KEY_control.axf

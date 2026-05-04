@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"buzzer_test\startup_stm32f103xb.o"
+"buzzer_test\main.o"
+"buzzer_test\gpio.o"
+"buzzer_test\stm32f1xx_it.o"
+"buzzer_test\stm32f1xx_hal_msp.o"
+"buzzer_test\stm32f1xx_hal_gpio_ex.o"
+"buzzer_test\stm32f1xx_hal.o"
+"buzzer_test\stm32f1xx_hal_rcc.o"
+"buzzer_test\stm32f1xx_hal_rcc_ex.o"
+"buzzer_test\stm32f1xx_hal_gpio.o"
+"buzzer_test\stm32f1xx_hal_dma.o"
+"buzzer_test\stm32f1xx_hal_cortex.o"
+"buzzer_test\stm32f1xx_hal_pwr.o"
+"buzzer_test\stm32f1xx_hal_flash.o"
+"buzzer_test\stm32f1xx_hal_flash_ex.o"
+"buzzer_test\stm32f1xx_hal_exti.o"
+"buzzer_test\system_stm32f1xx.o"
+--strict --scatter "buzzer_test\buzzer_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "buzzer_test.map" -o buzzer_test\buzzer_test.axf

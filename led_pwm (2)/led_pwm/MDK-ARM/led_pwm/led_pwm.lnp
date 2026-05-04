@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"led_pwm\startup_stm32f103xb.o"
+"led_pwm\main.o"
+"led_pwm\gpio.o"
+"led_pwm\tim.o"
+"led_pwm\stm32f1xx_it.o"
+"led_pwm\stm32f1xx_hal_msp.o"
+"led_pwm\stm32f1xx_hal_gpio_ex.o"
+"led_pwm\stm32f1xx_hal_tim.o"
+"led_pwm\stm32f1xx_hal_tim_ex.o"
+"led_pwm\stm32f1xx_hal.o"
+"led_pwm\stm32f1xx_hal_rcc.o"
+"led_pwm\stm32f1xx_hal_rcc_ex.o"
+"led_pwm\stm32f1xx_hal_gpio.o"
+"led_pwm\stm32f1xx_hal_dma.o"
+"led_pwm\stm32f1xx_hal_cortex.o"
+"led_pwm\stm32f1xx_hal_pwr.o"
+"led_pwm\stm32f1xx_hal_flash.o"
+"led_pwm\stm32f1xx_hal_flash_ex.o"
+"led_pwm\stm32f1xx_hal_exti.o"
+"led_pwm\system_stm32f1xx.o"
+--strict --scatter "led_pwm\led_pwm.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "led_pwm.map" -o led_pwm\led_pwm.axf

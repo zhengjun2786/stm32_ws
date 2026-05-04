@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"pwm_senor\startup_stm32f103xb.o"
+"pwm_senor\main.o"
+"pwm_senor\gpio.o"
+"pwm_senor\tim.o"
+"pwm_senor\usart.o"
+"pwm_senor\stm32f1xx_it.o"
+"pwm_senor\stm32f1xx_hal_msp.o"
+"pwm_senor\stm32f1xx_hal_gpio_ex.o"
+"pwm_senor\stm32f1xx_hal_tim.o"
+"pwm_senor\stm32f1xx_hal_tim_ex.o"
+"pwm_senor\stm32f1xx_hal.o"
+"pwm_senor\stm32f1xx_hal_rcc.o"
+"pwm_senor\stm32f1xx_hal_rcc_ex.o"
+"pwm_senor\stm32f1xx_hal_gpio.o"
+"pwm_senor\stm32f1xx_hal_dma.o"
+"pwm_senor\stm32f1xx_hal_cortex.o"
+"pwm_senor\stm32f1xx_hal_pwr.o"
+"pwm_senor\stm32f1xx_hal_flash.o"
+"pwm_senor\stm32f1xx_hal_flash_ex.o"
+"pwm_senor\stm32f1xx_hal_exti.o"
+"pwm_senor\stm32f1xx_hal_uart.o"
+"pwm_senor\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "pwm_senor\pwm_senor.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pwm_senor.map" -o pwm_senor\pwm_senor.axf

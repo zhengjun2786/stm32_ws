@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"3key\startup_stm32f103xb.o"
+"3key\main.o"
+"3key\gpio.o"
+"3key\stm32f1xx_it.o"
+"3key\stm32f1xx_hal_msp.o"
+"3key\stm32f1xx_hal_gpio_ex.o"
+"3key\stm32f1xx_hal.o"
+"3key\stm32f1xx_hal_rcc.o"
+"3key\stm32f1xx_hal_rcc_ex.o"
+"3key\stm32f1xx_hal_gpio.o"
+"3key\stm32f1xx_hal_dma.o"
+"3key\stm32f1xx_hal_cortex.o"
+"3key\stm32f1xx_hal_pwr.o"
+"3key\stm32f1xx_hal_flash.o"
+"3key\stm32f1xx_hal_flash_ex.o"
+"3key\stm32f1xx_hal_exti.o"
+"3key\system_stm32f1xx.o"
+--strict --scatter "3KEY\3KEY.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "3KEY.map" -o 3KEY\3KEY.axf

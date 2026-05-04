@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"light_test\startup_stm32f103xb.o"
+"light_test\main.o"
+"light_test\gpio.o"
+"light_test\stm32f1xx_it.o"
+"light_test\stm32f1xx_hal_msp.o"
+"light_test\stm32f1xx_hal_gpio_ex.o"
+"light_test\stm32f1xx_hal.o"
+"light_test\stm32f1xx_hal_rcc.o"
+"light_test\stm32f1xx_hal_rcc_ex.o"
+"light_test\stm32f1xx_hal_gpio.o"
+"light_test\stm32f1xx_hal_dma.o"
+"light_test\stm32f1xx_hal_cortex.o"
+"light_test\stm32f1xx_hal_pwr.o"
+"light_test\stm32f1xx_hal_flash.o"
+"light_test\stm32f1xx_hal_flash_ex.o"
+"light_test\stm32f1xx_hal_exti.o"
+"light_test\system_stm32f1xx.o"
+--strict --scatter "LIGHT_TEST\LIGHT_TEST.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LIGHT_TEST.map" -o LIGHT_TEST\LIGHT_TEST.axf

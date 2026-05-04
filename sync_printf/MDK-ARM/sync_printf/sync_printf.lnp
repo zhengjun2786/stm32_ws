@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"sync_printf\startup_stm32f103xb.o"
+"sync_printf\main.o"
+"sync_printf\gpio.o"
+"sync_printf\usart.o"
+"sync_printf\stm32f1xx_it.o"
+"sync_printf\stm32f1xx_hal_msp.o"
+"sync_printf\stm32f1xx_hal_gpio_ex.o"
+"sync_printf\stm32f1xx_hal_uart.o"
+"sync_printf\stm32f1xx_hal.o"
+"sync_printf\stm32f1xx_hal_rcc.o"
+"sync_printf\stm32f1xx_hal_rcc_ex.o"
+"sync_printf\stm32f1xx_hal_gpio.o"
+"sync_printf\stm32f1xx_hal_dma.o"
+"sync_printf\stm32f1xx_hal_cortex.o"
+"sync_printf\stm32f1xx_hal_pwr.o"
+"sync_printf\stm32f1xx_hal_flash.o"
+"sync_printf\stm32f1xx_hal_flash_ex.o"
+"sync_printf\stm32f1xx_hal_exti.o"
+"sync_printf\system_stm32f1xx.o"
+--strict --scatter "sync_printf\sync_printf.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "sync_printf.map" -o sync_printf\sync_printf.axf
